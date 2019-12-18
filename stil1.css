@@ -1,0 +1,117 @@
+*
+{
+	margin:0px;
+	padding:0px;
+}
+body
+{
+	overflow-y:hidden;
+	overflow-x:hidden;
+	background-image: url(pozad.png);
+	background-size: cover;
+}
+.crn
+{
+	width:100%;
+	height:72%;
+	background-image: url(crn.png);
+}
+.naslov
+{
+	padding:90px;
+	text-align:center;
+	font-size:150px;
+	opacity:1;
+	color:white;
+}
+p
+{
+	animation:fadein 1.5s;
+}
+@keyframes fadein
+{
+	from
+	{
+		opacity:0;
+	}
+	60%
+	{
+		opacity:0;
+	}
+	to
+	{
+		opacity:1;
+	}
+}
+.on
+{
+	text-decoration: none;
+	color: white;
+	padding:10px 10px;
+	text-align:center;
+	display: inline;
+	border: 2px;
+	border-color: white;
+	border-style: solid;
+	border-radius: 22px;
+	transition: 0.3s linear;
+}
+ul
+{
+	text-align:center;
+	animation:slidein 3.5s;
+}
+@keyframes slidein
+{
+	from
+	{
+		opacity:0;
+	}
+	20%
+	{
+		opacity:0;
+	}
+	to
+	{
+		opacity:1;
+	}
+}
+li
+{
+	display:inline;
+}
+a:hover
+{
+	animation: xd 0.3s;
+	background-color:white;
+	color:black;
+	font-size:20px;
+	transition: 0.05s linear;
+}
+@keyframes xd
+{
+	from{
+		color:white;
+		font-size:16px;
+	}
+	to
+	{
+		background-color:white;
+		color:black;
+		font-size:20px;
+	}
+}
+.logo
+{
+	margin-top:20px;
+	margin-left:30px;
+	border:2px;
+	border-color:black;
+	border-style:solid;
+	border-radius:100px;
+}
+
+
+
+
+
