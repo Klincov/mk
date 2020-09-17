@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucenje Programskih Jezika Prijava</title>
+    <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('progbkg.jpg');
+    background-size: cover;
+    overflow-y: hidden;
+}
+h3{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 25px;
+}
+form{
+    background-color:rgb(255, 255, 255);
+    border-radius: 35px;
+    width:30%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color:rgb(0, 0, 0);
+    border-width: 1mm;
+}
+.polje{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 6%;
+}
+.ime,.prezime,.texta{
+    outline:none;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 5px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 2px 2px 4px 0px;
+}
+input[type=text]{
+    width:40%;
+    transition: ease-in-out, width .35s ease-in-out;
+}
+input[type=text]:focus{
+    width:60%;
+}
+textarea{
+    resize:none;
+    width:70%;
+    transition: ease-in-out,width .35s ease-in-out;
+}
+textarea:focus{
+    width:80%;
+}
+.ttl{
+    font-size: 19px;
+}
+select{
+    width:50%;
+    border:none;
+    border-radius:5px;
+    background-color: rgb(192, 192, 192);
+    box-shadow: 2px 2px 4px 0px;
+    outline:none;
+}
+button{
+    width: 30%;
+    height:27px;
+    background-color: rgb(202, 201, 201);
+    border:none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 0px;
+    font-weight: bold;
+    outline:none;
+}
+button:hover{
+    cursor:pointer;
+}
+    </style>
+</head>
+<body>
+    <form action="login.php">
+            <h3>Prijava za ucenje programskih jezika</h3>
+
+            <div class="polje">
+                <label for="IME" class="ttl">Ime:</label><br>
+                <input type="text" name="Ime" class="ime">
+            </div>
+
+            <div class="polje">
+                <label for="PREZIME" class="ttl">Prezime:</label><br>
+                <input type="text" name="Prezime" class="prezime">
+            </div>
+
+            <div class="polje">
+                <label for="obr" class="ttl">Nivo obrazovanja:</label><br>
+                <input type="radio" name="obr" id="Osnovni"><label for="Osnovni">Osnovni</label>
+                <input type="radio" name="obr" id="Srednji"><label for="Srednji">Srednji</label>
+                <input type="radio" name="obr" id="Visi"><label for="Visi">Visi</label>
+            </div>
+
+            <div class="polje">
+                <label for="jezici" class="ttl">Jezik/Jezici koji me zanimaju:</label><br>
+                <input type="checkbox" name="Javascript" id="js"><label for="js">Javascript</label>
+                <input type="checkbox" name="ptyhon" id="pyt"><label for="pyt">Python</label>
+                <input type="checkbox" name="csarp" id="cs"><label for="cs">C#</label>
+            </div>
+
+            <div class="polje">
+                <label for="Kako" class="ttl">Kako ste saznali za nas?(nije obavezno)</label><br>
+                <textarea name="kako" id="texta" class="texta" cols="40" rows="5"></textarea>
+            </div>
+
+            <div class="polje">
+                <label for="grad" class="ttl">Grad</label><br>
+                <select name="grad" id="grad">
+                    <option value="Beograd">Beograd</option>
+                    <option value="NoviS">Novi Sad</option>
+                    <option value="Nis">Nis</option>
+                    <option value="drugo">Drugo</option>
+                </select>
+            </div>
+            <div class="polje">
+                <button type="submit">Prijavi me</button>
+            </div>
+    </form>
+    
+</body>
+</html>
